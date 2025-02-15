@@ -6,7 +6,7 @@ TOTAL TIME SPENT: 3h37m
 
 ## Features
 
-- Browse Pokemon cards with infinite scrolling
+- Browse Pokemon cards with pagination
 - Filter Pokemon by types
 - Responsive design for all devices
 - Fast and efficient data loading with React Query
