@@ -2,6 +2,8 @@
 
 A modern Pokemon deck viewer application built with Next.js and TypeScript. Browse through Pokemon cards, filter by types, and view image of each Pokemon.
 
+TOTAL TIME SPENT: 3h37m
+
 ## Features
 
 - Browse Pokemon cards with infinite scrolling
