@@ -12,6 +12,8 @@ export const usePokeListByType = (types: string[]) => {
           name: poke.pokemon.name,
           url: poke.pokemon.url,
         }));
+
+      // Remove duplication if pokemon have multiple types
       const preventDuplication = new Set<string>();
       typeResultFlat.forEach((poke) => preventDuplication.add(poke.name));
 

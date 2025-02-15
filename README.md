@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokemon Deck
+
+A modern Pokemon deck viewer application built with Next.js and TypeScript. Browse through Pokemon cards, filter by types, and view image of each Pokemon.
+
+## Features
+
+- Browse Pokemon cards with infinite scrolling
+- Filter Pokemon by types
+- Responsive design for all devices
+- Fast and efficient data loading with React Query
+- Modern UI components using ShadCN UI
+
+## Technologies
+
+- [Next.js 15](https://nextjs.org/) - React framework with App Router
+- [React 19](https://react.dev/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [@tanstack/react-query](https://tanstack.com/query) - Data fetching and caching
+- [Radix UI](https://www.radix-ui.com/) - Accessible UI components
+- [ShadCN UI](https://ui.shadcn.com) - Modern UI components
+- [Pokedex Promise V2](https://github.com/PokeAPI/pokedex-promise-v2) - Pokemon API client
+- [Bun](https://bun.sh/) - Fast JavaScript runtime and package manager
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Bun](https://bun.sh/) installed on your machine
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+### Development
+
+Run the development server:
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the application:
 
-## Learn More
+```bash
+bun run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bun start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/` - Next.js app router pages and layouts
+- `apis/` - API client setup and configuration
+- `components/` - Reusable UI components
+- `hooks/` - Custom React hooks for state and data management
+- `lib/` - Utility functions and shared logic
+- `public/` - Static assets
+- `types/` - TypeScript type definitions
